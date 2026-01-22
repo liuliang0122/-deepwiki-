@@ -1,0 +1,30 @@
+{
+  "name": "@custom-third-src/payment-integration",
+  "version": "1.0.0",
+  "description": "聚合支付集成模块",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./managers/*": "./managers/*.js",
+    "./utils/*": "./utils/*.js",
+    "./constants/*": "./constants/*.js",
+    "./factories/*": "./factories/*.js"
+  },
+  "keywords": [
+    "payment-integration",
+    "third-party",
+    "integration"
+  ],
+  "author": "医疗系统架构师团队",
+  "license": "ISC",
+  "engines": {
+    "node": "12.x || 14.x || 18.x || 20.x"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}
